@@ -1,4 +1,3 @@
-import org.jetbrains.compose.compose
 
 plugins {
     kotlin("multiplatform")
@@ -20,6 +19,8 @@ kotlin {
                 api(compose.runtime)
                 api(compose.foundation)
                 api(compose.material)
+                api(compose.materialIconsExtended)
+                implementation("com.h2database:h2:2.1.214")
             }
         }
         val commonTest by getting {
@@ -48,14 +49,17 @@ kotlin {
 }
 
 android {
-    compileSdkVersion(33)
+    compileSdk = 33
     sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
     defaultConfig {
-        minSdkVersion(24)
-        targetSdkVersion(33)
+        minSdk = 24
+        targetSdk = 33
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        compose = true
     }
 }

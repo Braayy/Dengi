@@ -1,0 +1,117 @@
+/*
+Dengi - A Simple Finance Manager, CLI for now, GUI for then.
+Using mosaic for ui.
+
+Transactions:
+    The transactions can be of two types, one-time(🕒) and scheduled(📅). This types auto explain themselves.
+    Properties for each type:
+        One Time:
+            Date, Description, Value, Status(Liquidated/Reconciled), Boundedness(Internal/External), Notes
+        Scheduled:
+            Frequency, Description, Value, Status(Liquidated/Reconciled), Boundedness(Internal/External), Notes
+
+=== Dengi v0.0.1 ===
+> Personal <
+
+[⬛] Manage accounts
+[ ] Manage transactions
+[ ] Manage categories
+[ ] Generate reports
+
+=== Manage Accounts ===
+
+[⬛] Create new account
+[ ] Nubank - Principal - ($)0,00
+[ ] N26 - Almoço - ($)0,00
+[ ] N26 - Cartões - ($)0,00
+[ ] Go back
+
+=== N26 - Rendimento ===
+
+[⬛] Manage transactions
+[ ] Edit account
+[ ] Delete account
+[ ] Go back
+
+=== Create new account ===
+
+UID:
+Name:
+Type: [ Asset ] [ Liability ]
+Opening balance: ($)
+Notes:
+
+=== Manage transactions ===
+
+[Go back] [ Add transaction ] <[ April/2023 ] [ May/2023 ] [ June/2023 ]>
+
+24/05{/2023} - {[N26 - Cartão]} - Subway - ($)15,90 - [ Almoço ] - [ Liquidated ]
+18/05{/2023} - {[N26 - Principal]} - Aluguel Jaleco - ($)10,00 - [ Faculdade ] - [ Reconciled ]
+25/05{/2023} - {[Nubank - Principal]} - Loteria - ($)1000,00 - [ Sorte ] - [ Reconciled ]
+25/05{/2023} - [ Nubank - Principal -> N26 - Principal ] - ($)1000,00 - [ Reconciled ]
+
+=== Add transaction ===
+
+Type: [ One-Time ] [ Scheduled ]
+
+One-Time:
+    Date: {TODAY}
+Scheduled:
+    Frequency: [ Daily ] [ Weekly ] [ Monthly ] [ Yearly ]
+    Start Date: {TODAY}
+Description:
+Value: ($)
+Status: [ Liquidated ] [ Reconciled ]
+Boundedness: [ Internal ] [ External ]
+    Internal:
+    From: {Try to make an autocompleter, else open a searcher menu}
+    To: {Try to make an autocompleter, else open a searcher menu}
+Notes:
+[ ] Go back
+
+=== Account Searcher ===
+
+Input:
+[⬛]
+[ ]
+[ ]
+[ ]
+[ ]
+[ ] Go back
+
+=== Manage categories ===
+
+[⬛] Create new category
+[ ] Almoço
+[ ] Faculdade
+[ ] Sorte
+[ ] Go back
+
+=== Almoço ===
+
+[⬛] Edit account
+[ ] Delete account
+[ ] Go back
+
+=== Generate reports ===
+
+[⬛] Month expenses
+[ ] Go back
+
+=== Month expenses ===
+
+[⬛] By categories
+[ ] By day
+[ ] By week
+[ ] Go back
+
+*/
+
+/*
+> Personal <
+
+[⬛] Manage accounts
+[ ] Manage transactions
+[ ] Manage categories
+[ ] Generate reports
+*/
